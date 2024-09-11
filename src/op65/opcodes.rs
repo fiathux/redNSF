@@ -11,64 +11,6 @@
 //! - <https://www.nesdev.org/wiki/Programming_with_unofficial_opcodes>
 //! - <https://www.oxyron.de/html/opcodes02.html>
 
-/// Absolute Addressing
-pub struct OpAbs {
-    pub addr: u16,
-}
-
-/// Absolute Addressing with X Offset
-pub struct OpAbsX {
-    pub addr: u16,
-}
-
-/// Absolute Addressing with Y Offset
-pub struct OpAbsY {
-    pub addr: u16,
-}
-
-/// Immediate Number
-pub struct OpImmd {
-    pub val: u8,
-}
-
-/// Implied
-pub struct OpImpl;
-
-/// Indirect Addressing
-pub struct OpInd {
-    pub ind: u16,
-}
-
-/// Indirect Addressing with X Offset
-pub struct OpIndX {
-    pub ind: u8,
-}
-
-/// Indirect Addressing with Y Offset
-pub struct OpIndY {
-    pub ind: u8,
-}
-
-/// Relative Addressing
-pub struct OpRel {
-    pub rel: u8,
-}
-
-/// Zero Page Addressing
-pub struct OpZp {
-    pub addr: u8,
-}
-
-/// Zero Page Addressing with X Offset
-pub struct OpZpX {
-    pub addr: u8,
-}
-
-/// Zero Page Addressing with Y Offset
-pub struct OpZpY {
-    pub addr: u8,
-}
-
 /// 6502 OpCode Definitions
 pub struct OpCode {
     /// OpCode
